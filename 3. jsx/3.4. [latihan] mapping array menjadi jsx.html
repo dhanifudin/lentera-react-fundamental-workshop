@@ -17,15 +17,9 @@
       ];
 
       const studentListItems = students.map((student) =>
-        // 💻 ubah implementasi berikut menggunakan jsx
-        React.createElement("li", { children: student.name, key: student.id })
+        <li id={student.id}>{student.name}</li>
       );
-
-      // 💻 ubah implementasi berikut menggunakan jsx
-      const studentList = React.createElement("ol", {
-        children: studentListItems,
-      });
-
+      const studentList = <ol>{studentListItems}</ol>
       const root = document.getElementById("root");
       ReactDOM.render(studentList, root);
     </script>

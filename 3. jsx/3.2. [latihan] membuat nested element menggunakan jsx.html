@@ -10,18 +10,14 @@
     <script type="text/babel">
       const greeting = (
         <div>
-          {/* 💻 buatlah <h1> menggunakan jsx dan ubah children-nya menjadi "Welcome" */}
-
-          {/* 💻 buatlah <input> menggunakan jsx dan ubah type-nya menjadi "text" dan placeholder-nya menjadi "enter your name" */}
-
-          {/* 💻 buatlah <button> menggunakan jsx dan ubah children-nya menjadi "Say hi" */}
+          <h1>Welcome</h1>
+          <input type="text" name="name" id="name" placeholder="enter your name"></input>
+          <button>Say hi</button>
         </div>
       );
 
       const root = document.getElementById("root");
-
-      // 💻 masukkan greeting ke dalam root menggunakan ReactDOM.render()
-      ReactDOM.render(null, root);
+      ReactDOM.render(greeting, root);
     </script>
   </body>
 </html>
