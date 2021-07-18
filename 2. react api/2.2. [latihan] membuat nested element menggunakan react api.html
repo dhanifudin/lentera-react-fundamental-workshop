@@ -9,12 +9,12 @@
     <script>
       const greeting = React.createElement("div", {
         children: [
-          // 💻 buat element <h1> menggunakan React.createElement() dan ubah children-nya menjadi "Welcome"
-          null,
-          // 💻 buat element <input> menggunakan React.createElement() dan ubah type-nya menjadi "text" dan placeholder-nya menjadi "enter your name"
-          null,
-          // 💻 buat element <button> menggunakan React.createElement() dan ubah children-nya menjadi "Say hi"
-          null,
+          React.createElement("h1", { children: "Welcome"}),
+          React.createElement("input", {
+            type: "text",
+            placeholder: "enter your name"}
+          ),
+          React.createElement("button", { children: "Say hi" })
         ],
       });
 

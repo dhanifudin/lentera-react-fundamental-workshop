@@ -4,13 +4,13 @@
   </head>
   <body>
     <div id="root"></div>
-    <!-- 
-    💻 untuk mengaktifkan development mode, kita perlu mengubah script react yang kita import menjadi : 
+    <!--
+    💻 untuk mengaktifkan development mode, kita perlu mengubah script react yang kita import menjadi :
     <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 
     Catatan :
-    setelah menggunakan script diatas, jangan lupa untuk memeriksa console browser terlebih dahulu dan pastikan ada pesan warning seperti berikut : 
+    setelah menggunakan script diatas, jangan lupa untuk memeriksa console browser terlebih dahulu dan pastikan ada pesan warning seperti berikut :
     Warning: Each child in a list should have a unique "key" prop
     -->
     <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
@@ -21,17 +21,20 @@
         children: [
           // 💻 tambahkan props key dengan value "greeting-title"
           React.createElement("h1", {
+            key: "greeting-title",
             children: "Welcome",
           }),
 
           // 💻 tambahkan props key dengan value "greeting-input"
           React.createElement("input", {
+            key: "greeting-input",
             type: "text",
             placeholder: "enter your name",
           }),
 
           // 💻 tambahkan props key dengan value "greeting-button"
           React.createElement("button", {
+            key: "greeting-button",
             children: "Say hi",
           }),
         ],
